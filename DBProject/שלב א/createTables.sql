@@ -1,0 +1,51 @@
+CREATE TABLE DEPARTMENT (
+    Department_ID INT PRIMARY KEY,
+    Dept_Name VARCHAR(255) UNIQUE NOT NULL,
+    Location VARCHAR(255)
+);
+
+CREATE TABLE ROLE (
+    Role_ID INT PRIMARY KEY,
+    Role_Title VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE EMPLOYEE_CONTRACT (
+    Contract_ID INT PRIMARY KEY,
+    Start_Date DATE NOT NULL,
+    Salary DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE EMPLOYEE (
+    Employee_ID INT PRIMARY KEY,
+    First_Name VARCHAR(50) NOT NULL,
+    Last_Name VARCHAR(50) NOT NULL,
+    Phone_Number VARCHAR(15), -- העמודה שהוספנו
+    Department_ID INT,
+    Role_ID INT,
+    Contract_ID INT,
+    FOREIGN KEY (Department_ID) REFERENCES DEPARTMENT(Department_ID),
+    FOREIGN KEY (Role_ID) REFERENCES ROLE(Role_ID),
+    FOREIGN KEY (Contract_ID) REFERENCES EMPLOYEE_CONTRACT(Contract_ID)
+);
+
+CREATE TABLE OFFICE (
+    Office_ID INT PRIMARY KEY,
+    Office_Name VARCHAR(255) NOT NULL,
+    Department_ID INT,
+    FOREIGN KEY (Department_ID) REFERENCES DEPARTMENT(Department_ID)
+);
+
+CREATE TABLE SHIFT (
+    Shift_ID INT PRIMARY KEY,
+    Shift_Type VARCHAR(50) NOT NULL,
+    Start_Time TIME NOT NULL
+);
+
+CREATE TABLE SHIFT_ASSIGNMENT (
+    Assignment_ID INT PRIMARY KEY,
+    Employee_ID INT,
+    Shift_ID INT,
+    Work_Date DATE NOT NULL,
+    FOREIGN KEY (Employee_ID) REFERENCES EMPLOYEE(Employee_ID),
+    FOREIGN KEY (Shift_ID) REFERENCES SHIFT(Shift_ID)
+);

@@ -1,5 +1,5 @@
 -- Data generated via Python script
-I
+
 -- 20,000 Shift Assignments
 INSERT INTO SHIFT_ASSIGNMENT (Assignment_ID, Employee_ID, Shift_ID, Work_Date) VALUES (1, 28, 2, '2024-08-06');
 INSERT INTO SHIFT_ASSIGNMENT (Assignment_ID, Employee_ID, Shift_ID, Work_Date) VALUES (2, 44, 1, '2024-10-20');
