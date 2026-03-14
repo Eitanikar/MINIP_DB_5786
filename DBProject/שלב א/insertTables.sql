@@ -1,0 +1,2 @@
+-- Manual inserts were replaced by Mockaroo and Programming scripts.
+-- See folders: /mockarooFiles and /Programming
