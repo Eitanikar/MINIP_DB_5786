@@ -36,18 +36,18 @@
 
 ### 2. מסך עריכת פרופיל וחוזה (טבלאות EMPLOYEE & EMPLOYEE_CONTRACT)
 פירוט מלא של פרטי העובד, כולל שיוך למחלקה ותפקיד, וניהול נתוני שכר ותנאי העסקה (הסמכות מיוחדות). הפרדה זו משקפת את החלטת העיצוב שלנו להפריד את נתוני החוזה מהעובד.
-![עריכת פרופיל](DBProject/images/edit_profile.jpg)
+![עריכת פרופיל](images/edit_profile.jpg)
 
 ### 3. מסך סידור משמרות (טבלת SHIFT_ASSIGNMENT)
 ממשק לשיבוץ שבועי של עובדים למשמרות בוקר, ערב ולילה לפי מחלקות. המערכת מוודאת כי עובד משובץ למחלקה המתאימה לו.
-![סידור משמרות](DBProject/images/shift_scheduling.jpg)
+![סידור משמרות](images/shift_scheduling.jpg)
 
 ---
 
 ## מודל נתונים
 ### תרשים ERD (Entity Relationship Diagram)
 תרשים הישויות והקשרים המציג את הלוגיקה העסקית.
-![תרשים ERD](DBProject/images/erd_diagram.jpg)
+![תרשים ERD](images/erd_diagram.jpg)
 
 ### תרשים DSD (Data Structure Diagram)
 תרשים המבנה הפיזי בבסיס הנתונים (טבלאות, סוגי נתונים ומפתחות).
@@ -67,19 +67,19 @@
 
 ### 1. הכנסה ידנית (Manual SQL)
 הכנסת נתונים בסיסיים לבדיקת תקינות המפתחות.
-![Manual Insert Screen](DBProject/images/Manual_Insert_Screen.jpg)
+![Manual Insert Screen](images/Manual_Insert_Screen.jpg)
 
 ### 2. שימוש ב-Mockaroo (API/Data Generator)
 ייצור 500 רשומות לכל טבלה (עובדים, מחלקות, תפקידים וכו') עם נתונים דמויי מציאות.
-![Mockaroo Screen](DBProject/images/Mockaroo_Screen.jpg)
+![Mockaroo Screen](images/Mockaroo_Screen.jpg)
 
 ### 3. שימוש ב-Python (Programming Method)
 כתיבת סקריפט Python המייצר 20,000 חוזים ו-20,000 שיבוצי משמרות אקראיים ותקינים לוגית.
-![Python Script Screen](DBProject/images/Python_Script_Screen.jpg)
+![Python Script Screen](images/Python_Script_Screen.jpg)
 
 ---
 
 ## גיבוי
 ### גיבוי נתונים
 ביצוע גיבוי מלא למסד הנתונים לקובץ `backup_stage_a.sql`.
-![Backup Success](DBProject/images/Backup_Success.jpg)
+![Backup Success](images/Backup_Success.jpg)
