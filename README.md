@@ -51,7 +51,7 @@
 
 ### תרשים DSD (Data Structure Diagram)
 תרשים המבנה הפיזי בבסיס הנתונים (טבלאות, סוגי נתונים ומפתחות):
-![DSD Diagram]([נתיב_לתמונה_של_התרשים_שלך])
+![DSD Diagram](images/dsd_diagram.jpg)
 
 ---
 
