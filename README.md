@@ -47,7 +47,7 @@
 ## מודל נתונים
 ### תרשים ERD (Entity Relationship Diagram)
 תרשים הישויות והקשרים המציג את הלוגיקה העסקית.
-![תרשים ERD](images/ERD_diagram_stage_1.jpg)
+![תרשים ERD](images/ERD_diagram_stage_1pg.jpg)
 
 ### תרשים DSD (Data Structure Diagram)
 תרשים המבנה הפיזי בבסיס הנתונים (טבלאות, סוגי נתונים ומפתחות).
