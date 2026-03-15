@@ -36,18 +36,18 @@
 
 ### 2. מסך עריכת פרופיל וחוזה (טבלאות EMPLOYEE & EMPLOYEE_CONTRACT)
 פירוט מלא של פרטי העובד, כולל שיוך למחלקה ותפקיד, וניהול נתוני שכר ותנאי העסקה (הסמכות מיוחדות). הפרדה זו משקפת את החלטת העיצוב שלנו להפריד את נתוני החוזה מהעובד.
-![עריכת פרופיל](DBProject/images/edit_profile.png)
+![עריכת פרופיל](DBProject/images/edit_profile.jpg)
 
 ### 3. מסך סידור משמרות (טבלת SHIFT_ASSIGNMENT)
 ממשק לשיבוץ שבועי של עובדים למשמרות בוקר, ערב ולילה לפי מחלקות. המערכת מוודאת כי עובד משובץ למחלקה המתאימה לו.
-![סידור משמרות](DBProject/images/shift_scheduling.png)
+![סידור משמרות](DBProject/images/shift_scheduling.jpg)
 
 ---
 
 ## מודל נתונים
 ### תרשים ERD (Entity Relationship Diagram)
 תרשים הישויות והקשרים המציג את הלוגיקה העסקית.
-![תרשים ERD](DBProject/images/erd_diagram.png)
+![תרשים ERD](DBProject/images/erd_diagram.jpg)
 
 ### תרשים DSD (Data Structure Diagram)
 תרשים המבנה הפיזי בבסיס הנתונים (טבלאות, סוגי נתונים ומפתחות).
