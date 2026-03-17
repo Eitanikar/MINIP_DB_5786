@@ -36,22 +36,22 @@
 
 ### 2. מסך עריכת פרופיל וחוזה (טבלאות EMPLOYEE & EMPLOYEE_CONTRACT)
 פירוט מלא של פרטי העובד, כולל שיוך למחלקה ותפקיד, וניהול נתוני שכר ותנאי העסקה (הסמכות מיוחדות). הפרדה זו משקפת את החלטת העיצוב שלנו להפריד את נתוני החוזה מהעובד:
-![עריכת פרופיל](images/edit_profile.jpg)
+![עריכת פרופיל](/DBProject/שלב%20א/images/edit_profile.jpg)
 
 ### 3. מסך סידור משמרות (טבלת SHIFT_ASSIGNMENT)
 ממשק לשיבוץ שבועי של עובדים למשמרות בוקר, ערב ולילה לפי מחלקות. המערכת מוודאת כי עובד משובץ למחלקה המתאימה לו:
-![סידור משמרות](images/shift_scheduling.jpg)
+![סידור משמרות](/DBProject/שלב%20א/images/shift_scheduling.jpg)
 
 ---
 
 ## מודל נתונים
 ### תרשים ERD (Entity Relationship Diagram)
 תרשים הישויות והקשרים המציג את הלוגיקה העסקית:
-![תרשים ERD](images/ERD_diagram_stage_1pg.jpg)
+![תרשים ERD](/DBProject/שלב%20א/images/ERD_diagram_stage_1pg.jpg)
 
 ### תרשים DSD (Data Structure Diagram)
 תרשים המבנה הפיזי בבסיס הנתונים (טבלאות, סוגי נתונים ומפתחות):
-![DSD Diagram](images/dsd_diagram.jpg)
+![DSD Diagram](/DBProject/שלב%20א/images/dsd_diagram.jpg)
 
 ---
 
@@ -67,35 +67,35 @@
 
 ### 1. הכנסה ידנית (Manual SQL)
 הכנסת נתונים בסיסיים לבדיקת תקינות המפתחות:
-![Manual Insert Screen](images/Manual_Insert_Screen.jpg)
+![Manual Insert Screen](/DBProject/שלב%20א/images/Manual_Insert_Screen.jpg)
 
 ### 2. שימוש ב-Mockaroo (API/Data Generator)
 ייצור 500 רשומות לכל טבלה (עובדים, מחלקות, תפקידים וכו') עם נתונים דמויי מציאות:
-![Mockaroo Screen](images/Mockaroo_Screen.jpg)
+![Mockaroo Screen](/DBProject/שלב%20א/images/Mockaroo_Screen.jpg)
 
 ### 3. שימוש ב-Python (Programming Method)
 כתיבת סקריפט Python המייצר 20,000 חוזים ו-20,000 שיבוצי משמרות אקראיים ותקינים לוגית:
-![Python Script Screen](images/Python_Script_Screen.jpg)
+![Python Script Screen](/DBProject/שלב%20א/images/Python_Script_Screen.jpg)
 
 ---
 
 ## גיבוי ושחזור
 ### גיבוי נתונים
 ביצוע גיבוי מלא למסד הנתונים לקובץ `backup_stage_a.sql`:
-![Backup Success](images/Backup_Success.jpg)
+![Backup Success](/DBProject/שלב%20א/images/Backup_Success.jpg)
 
 ### שחזור נתונים:
 לפני ביצוע השחזור, בוצע ניקוי מלא של כל נתוני המערכת באמצעות פקודת `TRUNCATE` עם אילוץ `CASCADE`. פעולה זו מבטיחה שהטבלאות ירוקנו לחלוטין מתוכן תוך שמירה על מבנה הטבלאות, מה שמאפשר לבחון את תקינות קובץ הגיבוי והזרקת הנתונים מחדש.
 
-![מחיקת נתונים מהמערכת](images/wipe_data.jpg)
+![מחיקת נתונים מהמערכת](/DBProject/שלב%20א/images/wipe_data.jpg)
 
 
 ### ביצוע השחזור בפועל
 לאחר ריקון המאגר, הורץ קובץ הגיבוי המאוחד `backup_stage_a.sql`. בתמונה ניתן לראות את הצלחת הרצת פקודות ה-INSERT המסיביות על כל טבלאות המערכת. התהליך הסתיים ללא שגיאות, מה שמעיד על תקינות המפתחות הזרים (Foreign Keys) וסדר הכנסת הנתונים שנקבע בגיבוי.
 
-![ביצוע שחזור נתונים מהגיבוי](images/restore_execution.jpg)
+![ביצוע שחזור נתונים מהגיבוי](/DBProject/שלב%20א/images/restore_execution.jpg)
 
 ### אימות נתונים לאחר שחזור
 כדי לוודא שהשחזור בוצע במלואו, הרצנו שאילתת סיכום המציגה את כמות הרשומות בכל אחת מטבלאות המערכת. כפי שניתן לראות בצילום המסך, כל 42,500 הרשומות (500 לכל טבלה בסיסית ו-20,000 לטבלאות הקשר והחוזים) קיימות במערכת. תוצאה זו מאשרת כי תהליך הגיבוי והשחזור תקין לחלוטין ומוכן לעבודה בשלב ב'.
 
-![אימות כמויות נתונים לאחר שחזור](images/restore_verification.jpg)
+![אימות כמויות נתונים לאחר שחזור](/DBProject/שלב%20א/images/restore_verification.jpg)
